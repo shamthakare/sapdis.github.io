@@ -1,0 +1,17 @@
+#container{
+    text-align: center;
+    padding: 300px;
+    color: aliceblue;
+    /* width: 100vw;
+    height: 550px; */
+    width: 99vw;
+    height: 50vh;
+    background-image: url(../../../assets/back_title_careers.jpg);
+    background-size: cover;
+}
+.card{
+    width: 40%;
+}
+.container-para{
+    text-align: center;
+}

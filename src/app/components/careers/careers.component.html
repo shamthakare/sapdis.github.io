@@ -1,0 +1,59 @@
+<div id="container">
+    <div class="mt-5">
+        <span>Home | Contacts</span>
+        <h1>Careers</h1>
+        <p>Eager for fresh opportunities, people, destinations, and awesome discoveries.<br> If you're ready to collaborate or join us, speak up.
+        </p>
+    </div>
+</div>
+
+<div class="container-para">
+    <h1>Start a New Career With SAPDIS Technologies</h1>
+    <p>It’s really not easy to get in, but that’s kinda what makes it awesome. If you manage to get in, you surely know you would be <br>
+        working with other awesome people, as we only look for the best.</p>
+        <p>---------------------------------------------------</p>
+</div>
+
+<div class="row">
+    <div class="card">
+    <div class="col-6 ">
+        <h1  class="form-control">Open Position</h1>
+    </div>
+    </div>
+    <div class="col-6"><div class="container">
+        <h3>Upload your CV</h3>
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <label for="name">Name: </label>
+            <input id="name" type="text" formControlName="name"  class="form-control">
+          
+            <label for="email">Email *: </label>
+            <input id="email" type="email" formControlName="email"  class="form-control">
+    
+            <label for="phone">Phone: </label>
+            <input id="phone" type="number" formControlName="phone"  class="form-control">
+
+            <label for="cars">Applying for:</label>
+            <select name="cars" id="cars" formControlName="cars" class="form-control">
+                <option value="volvo">first</option>
+                <option value="saab">second</option>
+                <option value="mercedes">thard</option>
+                <option value="audi">forth</option>
+              </select><br>
+    
+            <label for="subject">Experience in Years: </label>
+            <input id="subject" type="text" formControlName="subject"  class="form-control">
+
+            <label for="skil">Skill Set: </label>
+            <input id="skil" type="text" formControlName="skil"  class="form-control">
+    
+            <p>Upload CV (in word doc format)</p>
+            <input type="file" id="myFile" name="filename">
+            <button type="submit" [disabled]="!profileForm.valid" class="btn btn-success">Submit</button>
+             
+        </form>
+    </div>
+</div>
+
+</div>
+
+

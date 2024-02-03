@@ -1,0 +1,41 @@
+<div id="container">
+    <div class=" contact">
+        <span>Home | Contacts</span>
+    </div >
+    <div class="mt-5 contact" ><h1>Contacts</h1></div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Connect To Transform</h1>
+            <h4>We are there for you. Please contact us for any requirement.</h4>
+            <h3>Managing Director</h3><br>
+            <h5>Name: Dhanshree Patil</h5>
+            <h5>Mobile: +91 7499842002</h5>
+            <h5>Email: sapdis2023@gmail.com</h5><br><br>
+            <h3>Address:</h3><br>
+            <h5>Gulmohar parkview, bypass, mandana acolade road,<br> tukaram nagar kharadi pune maharastra 411014.</h5><br><br>
+        </div>
+        <div class="col mt-5">
+            <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                <label for="name">Your Name: </label>
+                <input id="name" type="text" formControlName="name"  class="form-control">
+              
+                <label for="email">E-Mail Address: </label>
+                <input id="email" type="email" formControlName="email"  class="form-control">
+
+                <label for="phone">Phone: </label>
+                <input id="phone" type="number" formControlName="phone"  class="form-control">
+
+                <label for="subject">Subject: </label>
+                <input id="subject" type="text" formControlName="subject"  class="form-control">
+
+                <label for="Message">Message Text:: </label>
+                <textarea id="Message" name="Message" rows="4" cols="50" formControlName="Message"  class="form-control"></textarea>
+
+                <button type="submit" [disabled]="!profileForm.valid" formControlName="submit"  class="form-control btn btn-primary">Send Massege</button>
+            </form>
+        </div>
+    </div>
+</div>
